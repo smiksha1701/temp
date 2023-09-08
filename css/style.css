@@ -474,9 +474,9 @@ ol {
 .social-section .social-link-warp:after {
 	position: absolute;
 	content: '';
-	width: 50%;
+	width: 65%;
 	height: 2px;
-	left: 23%;
+	align-self: center;
 	top: 50%;
 	margin-top: 1px;
 	background: #cbcbcb;
@@ -485,17 +485,24 @@ ol {
 /*---------------------
 	Resume section
 ----------------------*/
-.resume-section.with-bg {
+.resume-section.bg1 {
 	background-image: url(../img/resume-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.resume-section.with-another-bg {
+.resume-section.bg2 {
 	background-image: url(../img/another-resume-bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: right;
 }
+.resume-section.bg3 {
+	background-image: url(../img/bg3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+}
+
 
 .resume-list {
 	list-style: none;
@@ -564,6 +571,7 @@ ol {
 	margin-bottom: 15px;
 }
 
+
 .review-slider .owl-dots .owl-dot.active {
 	background: #40424a;
 }
@@ -588,13 +596,51 @@ ol {
 	font-size: 16px;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+/*---------------------
+	Navigation section
+----------------------*/
+
+/* Style for the button */
+#navbar {
+	background-color: #333; /* Black background color */
+	position: fixed; /* Make it stick/fixed */
+	top: 0; /* Stay on top */
+	width: 100%; /* Full width */
+	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+	z-index: 1000;
+}
+
+/* Style the navbar links */
+#navbar a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	font-size: 30;
+	padding: 14px;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
 /*---------------------
 	Portfolio section
 ----------------------*/
-.portfolio-warp {
+.portfolio-warp.bg3{
 	padding: 0 60px;
 	background-image: url(https://www.kindpng.com/picc/m/57-579922_connected-dots-triangle-hd-png-download.png);
+	background-repeat: no-repeat;
 	background-size: cover;
+}
+.portfolio-warp.bg4 {
+	background-image: url(../img/bg4.jpg);
+	background-repeat: repeat-x;
+	background-position: right;
 }
 
 .portfolio-item h1 {
@@ -618,7 +664,7 @@ ol {
 .portfolio-item a:hover {
     color: #579dff; /* Change the color on hover */
     transform: scale(1.2); /* Add a slight scale effect on hover */
-}
+}​
 
 .portfolio-item .port-pic {
 	margin-bottom: 30px;
